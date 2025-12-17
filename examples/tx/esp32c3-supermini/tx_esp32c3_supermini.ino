@@ -1,8 +1,8 @@
 #include <Arduino.h>
 #include <SPI.h>
 #include <RF24.h>
-#include "mavlink_include.h"
-#include "telemetry_packet.h"
+#include "../../include/mavlink_include.h"
+#include "../../include/telemetry_packet.h"
 
 // ESP32-C3 SuperMini UART1 pins for Pixhawk TELEM
 static const int MAV_RX_PIN = 20; // Pixhawk TX -> ESP RX
