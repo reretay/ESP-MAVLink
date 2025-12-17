@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <SPI.h>
 #include <RF24.h>
-#include "../../include/telemetry_packet.h"
+#include "../../../include/telemetry_packet.h"
 
 static const uint8_t NRF_CE = 10;
 static const uint8_t NRF_CSN = 9;

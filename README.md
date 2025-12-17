@@ -82,6 +82,8 @@ PX4
 - 공용
   - `include/mavlink_include.h` — MAVLink 헤더 포함 래퍼
   - `include/telemetry_packet.h` — RF 전송용 패킷 구조체
+- 테스트
+  - `examples/test/telem-heartbeat` — TELEM 연결만 점검하는 Heartbeat-only 스케치(무선 미포함)
 - TX
   - `examples/tx/esp32c3-supermini` — UART1(GPIO20/21), RF24 송신
   - `examples/tx/esp32c3` — UART1(GPIO16/17), RF24 송신
@@ -97,9 +99,10 @@ RF24 기본값: 파이프 주소 "24613", 데이터레이트 `RF24_250KBPS`, 출
 
 ## 빌드 절차
 1) 보드/포트 선택
-2) TX 1종, RX 1종 예제 열기
-3) 필요 시 핀/주소/속도 수정
-4) 업로드 후 시리얼(115200) 확인: TX(송출 로그), RX(패킷 출력)
+2) 예제 선택: TELEM 점검(`examples/test/telem-heartbeat`) → RF 연동 전 단독 확인
+3) RF 포함 TX/RX 예제로 전환
+4) 필요 시 핀/주소/속도 수정
+5) 업로드 후 시리얼(115200) 확인: HB 전송 로그 또는 패킷 출력
 
 ---
 

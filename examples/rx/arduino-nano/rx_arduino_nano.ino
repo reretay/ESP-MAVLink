@@ -1,6 +1,6 @@
 #include <SPI.h>
 #include <RF24.h>
-#include "../../include/telemetry_packet.h"
+#include "../../../include/telemetry_packet.h"
 
 // Arduino Nano pins example
 // CE -> D9, CSN -> D10 (adjust if wired differently)
